@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Karthik's Portfolio</title>
+    <link rel="stylesheet" href="styles-for-component.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navigation container">
+        <div class="nav-brand-name"><a class="link" href="index.html">Karthik.rv</a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="./index.html">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="./projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="./blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+
+    <header class="hero">
+
+        <h1 class="hero-heading"> <span class="heading-name"></span>ES6 Features</h1>
+
+
+    </header>
+
+    <main>
+
+        <!-- Blog section -->
+        <section class="section blog-section ">
+            <h4>Topics we will cover in this blog:</h4>
+            <ul>
+                <li>Array Destructuring</li>
+                <li>Object destructuring </li>
+                <li>Concatenate Arrays and object </li>
+                <li>Template strings</li>
+            </ul>
+        </section>
+
+        <section class="section blog-section ">
+            <h2>Array Destructuring</h2>
+            <p>The destructuring assignment allows reading values from an array or properties from an object, into
+                distinct variables.
+                Array destructuring is a new feature in ES6, which makes code easier to read.
+
+                Lets look at example without array destructuring.</p>
+            <img class="blog-img" src="./image/blog-2/code-a.png" alt="">
+
+            <p>Lets look how above code can be made simple to read and with less number of lines using array
+                destructuring</p>
+            <img class="blog-img" src="./image/blog-2/code-b.png" alt="">
+            <p>There is no need to declare variables separately. The first index value of <span
+                    class="code">employeeDetails</span> array will
+                be assigned to first index variable <span class="code">firstName</span> and second index value of
+                <span class="code">employeeDetails</span> array will
+                be assigned to second index variable <span class="code">lastName</span> in array destructuring.
+
+                You can identify array destructuring when you see a array on left side of <span class="code">=</span>
+                operator
+                <span></span>
+                and variable name on right side.
+            </p>
+
+        </section>
+
+
+        <section class="section blog-section ">
+            <h2>Object destructuring </h2>
+            <p>Similarly to array destructuring , you can destructuring an object also.
+
+                lets look at an object without destructuring first.</p>
+            <img class="blog-img" src="./image/blog-2/code-c.png" alt="">
+
+            <p>Lets look how to refactor above code using object destructuring.</p>
+            <img class="blog-img" src="./image/blog-2/code-d.png" alt="">
+            <p>For object destructuring variable name should match with keys of the object.</p>
+            <p>You can assign default value to object being destructured even though if the property is not present in
+                object.</p>
+            <img class="blog-img" src="./image/blog-2/code-e.png" alt="">
+            <p>If there is property in object, it will ignore the default value and takes in account of value in object.
+            </p>
+            <img class="blog-img" src="./image/blog-2/code-f.png" alt="">
+            <p>Renaming of variable is also possible while destructuring.</p>
+
+            <img class="blog-img" src="./image/blog-2/code-g.png" alt="">
+        </section>
+
+        <section class="section blog-section ">
+            <h2>Concatenate Arrays and object using (...)Spread notation</h2>
+            <p>Spread syntax expands an array into separate elements .We can merge or combine array together using <span
+                    class="code">…spread operator</span></p>
+            <img class="blog-img" src="./image/blog-2/spread-1.png" alt="">
+            <p>Similarly you can combine objects also using <span class="code">…spread operator</span></p>
+            <img class="blog-img" src="./image/blog-2/spread-2.png" alt="">
+            <p>Since <span class="code">place</span> is common in both <span class="code">person1</span> and <span
+                    class="code">person2</span> object , <span class="code">totalPerson</span> will contain unique
+                properties
+                from both object and common properties from object present at last in <span
+                    class="code">totalPerson</span>.</p>
+        </section>
+
+        <section class="section blog-section ">
+            <h2>Template strings</h2>
+            <p>Template strings allow embedding expressions.Single or double strings do not support interpolation and
+                are restricted to one line.
+
+                Template strings solve this problem.</p>
+            <img class="blog-img" src="./image/blog-2/template-1.png" alt="">
+            <p>Template string are written inside backtick (`) character
+
+                Template string can be multiline string , which is not possible using single and double quotes.</p>
+            <img class="blog-img" src="./image/blog-2/template-2.png" alt="">
+            <p>Another feature of template string is interpolation , which means we can write javascript variable in it
+                and it will give value of variable where it is called. They contain placeholder indicated by dollar($)
+                and followed by curly brackets({
+                }) inside template string as shown below.</p>
+            <img class="blog-img" src="./image/blog-2/template-3.png" alt="">
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-heading">Connect with me</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/home?lang=en" target="_blank"><img class="social-links"
+                        src="./image/twitter.svg" alt="twitter link"></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/karthikgoud" target="_blank"><img class="social-links"
+                        src="./image/github.svg" alt="github link"></a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/feed/" target="_blank"><img class="social-links"
+                        src="./image/linkedin.svg" alt="linkedin link"></a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
