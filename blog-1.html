@@ -39,7 +39,7 @@
 
         <!-- Blog section -->
         <section class="section blog-section ">
-            <h4>Topics we will cover in this blog:</h4>
+            <h2>Topics we will cover in this blog:</h2>
             <ul>
                 <li>What is DOM ?</li>
                 <li>Referring element in DOM using
@@ -60,7 +60,8 @@
 
         <section class="section blog-section ">
             <h2>What is DOM ?</h2>
-            <p>DOM Stands for Document Object Model. It is a javascript object and web API that describes HTML. DOM is
+            <p>DOM Stands for <em>Document Object Model</em>. It is a javascript object and web API that describes HTML.
+                DOM is
                 representation of HTML page that you can access using javascrit .DOM represents document as nodes and
                 object .With help of DOM you can perform many things like add text , delete items and lot more
                 operations.</p>
@@ -68,33 +69,35 @@
             <p>We can access DOM by going to dev tools in your browser or right click and go to inspect or press F12 on
                 keyboard. We can use document variable for accessing DOM.</p>
 
-
         </section>
 
         <section class="section blog-section ">
             <h2>Selecting/Referencing a HTML element.</h2>
             <p>Here we will see how we can connect HTML and javascript using document object. We can use
-                document.querySelector(”selector”) to select a element in html document. </p>
+                <span class="code">document.querySelector(”selector”)</span> to select a element in html document.
+            </p>
 
             <p>We can access DOM by going to dev tools in your browser or right click and go to inspect or press F12 on
                 keyboard. We can use document variable for accessing DOM.</p>
 
             <img src="./code-img/carbon.png" alt="">
 
-            <p>Above code inside script tag uses querySelector() with class as css selector.</p>
+            <p>Above code inside script tag uses <span class="code">querySelector()</span> with class as css selector.
+            </p>
 
             <p>The value of variable is object that represents an html element in DOM. If no element with selector
                 mentioned is found it returns null.</p>
 
             <img src="./code-img/code2.png" alt="">
 
-            <p>In document.querySelector(”Selector") we can different selector types similar to css selectors like
+            <p>In <span class="code">document.querySelector(”Selector")</span> we can different selector types similar
+                to css selectors like
                 following:</p>
 
             <ul>
-                <li>Type selector (h1, h2,p): document.querySelector(”h1")</li>
-                <li>ID selector (#) : document.querySelector(”#elementID")</li>
-                <li>Class selector (.): document.querySelector(”.className")</li>
+                <li><em>Type selector</em> (h1, h2,p) : <span class="code">document.querySelector(”h1")</span></li>
+                <li><em>ID selector</em> (#) : <span class="code">document.querySelector(”#elementID")</span></li>
+                <li><em>Class selector</em> (.) : <span class="code">document.querySelector(”.className")</span></li>
             </ul>
 
             <p>There are other ways to select an element like following but these are old and are not used at present.
@@ -110,41 +113,50 @@
 
         <section class="section blog-section">
             <h2>Select multiple elements having same selector.</h2>
-            <p>document.querySelector(”Selector") references only the one or first element (incase of many elements with
+            <p><span class="code">document.querySelector(”Selector")</span> references only the one or first element
+                (incase of many elements with
                 same selector).</p>
-            <p>we have to use document.querySelectorAll(”Selector") to reference all elements with same selector. It
+            <p>we have to use <span class="code">document.querySelectorAll(”Selector")</span> to reference all elements
+                with same selector. It
                 returns a nodelist containing all elements that matches selector mentioned in query.</p>
 
             <img src="./code-img/code3.png" alt="">
             <img src="./code-img/code3_2.png" alt="">
-            <p>In above example we have asked to refer all input elements using querySelectorAll(). It returns a
+            <p>In above example we have asked to refer all input elements using <span
+                    class="code">querySelectorAll()</span>. It returns a
                 nodelist in which we can access each input element by indexing ex : input[0] gives first input. We can
                 use array properties like length and method like forEach() to iterate on nodelist.</p>
         </section>
 
-
         <section class="section blog-section">
-            <h2>Referring text inside elements:</h2>
-            <h3>Element.textContent</h3>
+            <h2>Referring text inside elements :</h2>
+            <h3>Element.textContent :</h3>
             <p>`Element.textContent` is a property that returns text inside an element.ex:
                 p, div, h1, span elements.</p>
             <img src="./code-img/code4.png" alt="">
             <h3>Element.innerHTML</h3>
-            <p>There is some limitations to .textContent. which is taken care by .innerHTML</p>
+            <p>There is some limitations to .textContent. which is taken care by <span class="code">.innerHTML</span>
+            </p>
             <img src="./code-img/code5.png" alt="">
             <p>Output is same for both the properties, but…in certain scenarios textContent wont work as shown below.
             </p>
             <img src="./code-img/code6.png" alt="">
-            <p>As we can see .textContent gives only text inside element , whereas .innerHTML gives text along with HTML
+            <p>As we can see <span class="code">.textContent</span> gives only text inside element , whereas <span
+                    class="code">.innerHTML</span>
+                gives text along with HTML
                 tags. It depends on purpose which to use when , if user want to get or change only text inside elements
-                use .textContent. if user wants to put HTML elements inside HTML document it is better to use
-                .innerHTML.</p>
+                use <span class="code">.textContent</span>. if user wants to put HTML elements inside HTML document it
+                is better to use
+                <span class="code">.innerHTML</span>.
+            </p>
         </section>
 
         <section class="section blog-section ">
             <h2>Getting text from user input:</h2>
-            <p>To refer the text inside user input element we can not use .textContent or .innerHTML For that we have to
-                use value property. Elements where we can use value property are input, textarea, select .</p>
+            <p>To refer the text inside user input element we can not use <span class="code">.textContent</span> or
+                <span class="code">.innerHTML</span> For that we have to
+                use value property. Elements where we can use value property are input, textarea, select .
+            </p>
             <img src="./code-img/code7.png" alt="">
             <p>We can set default value of an input user using value attribute as shown below</p>
             <img src="./code-img/code8.png" alt="">

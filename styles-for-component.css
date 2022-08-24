@@ -16,7 +16,7 @@ body {
 
 p{
     font-weight: 500;
-    padding-bottom: 1rem;
+    padding-bottom: 0.2rem;
 }
 
 hr {
@@ -140,7 +140,7 @@ hr {
 /* section */
 
 .section {
-    padding: 0 8rem 2rem 8rem;
+    padding: 0 8rem 0.5rem 8rem;
 }
 
 .off-white {
