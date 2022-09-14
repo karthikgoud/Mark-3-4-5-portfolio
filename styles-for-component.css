@@ -2,7 +2,6 @@
 
 :root {
     --primary-color: #00008b;
-    /* --secondary-color: rgb(13, 146, 146); */
     --secondary-color: #6666b9;
     --offwhite-color: lavender;
     --color-color: #FBEAEB;
@@ -50,8 +49,6 @@ hr {
     text-underline-offset: 0.3rem;
 
 }
-
-
 
 /* links */
 
@@ -205,8 +202,6 @@ hr {
     color: var(--primary-color);
 
 }
-
-
 
 /* blog section */
 
