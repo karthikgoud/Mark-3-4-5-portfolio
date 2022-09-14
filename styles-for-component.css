@@ -2,12 +2,12 @@
 
 :root {
     --primary-color: #00008b;
-    --secondary-color: rgb(13, 146, 146);
-    /* --offwhite-color: #e0f2fe; */
-    --offwhite-color: #e2f2ff;
+    /* --secondary-color: rgb(13, 146, 146); */
+    --secondary-color: #6666b9;
+    --offwhite-color: lavender;
     --color-color: #FBEAEB;
     --link-color:rgb(237, 255, 43);
-    --mark-count:	#ff4a54;
+    --mark-count:	lightslategrey;
     --mark-heading-color:#4a54ff;
 }
 
@@ -65,13 +65,15 @@ hr {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
+    font-weight: 600;
+
 }
 
 .link-primary:hover {
-    background-color: lightskyblue;
+    background-color: #6666b9;
     border-radius: 0.5rem;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .link-secondary {
