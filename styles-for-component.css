@@ -3,9 +3,12 @@
 :root {
     --primary-color: #00008b;
     --secondary-color: rgb(13, 146, 146);
-    --offwhite-color: #e0f2fe;
+    /* --offwhite-color: #e0f2fe; */
+    --offwhite-color: #e2f2ff;
     --color-color: #FBEAEB;
     --link-color:rgb(237, 255, 43);
+    --mark-count:	#ff4a54;
+    --mark-heading-color:#4a54ff;
 }
 
 body {
@@ -118,9 +121,6 @@ hr {
 }
 
 .nav-pills .link:hover{
-    /* border-radius: 0.6rem; */
-    /* background-color: rgba(41, 162, 255, 0.5); */
-    text-decoration: underline;
     color: var(--link-color)
 }
 
@@ -168,6 +168,7 @@ hr {
 
 .section h1 {
     padding: 2rem 0 0 0;
+    color: var(--mark-heading-color);
 }
 
 .list-offwhite{
@@ -203,11 +204,17 @@ hr {
 
 }
 
+
+
 /* blog section */
 
 .blog-section{
     margin: 0 auto;
     width: 700px;
+}
+
+.mark-count{
+    color: var(--mark-count);
 }
 
 .code{
