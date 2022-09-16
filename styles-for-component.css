@@ -95,6 +95,7 @@ hr {
 
 .list-non-bullet {
     list-style-type: none;
+    margin-top: 0;
 }
 
 .list-item-inline {
@@ -115,7 +116,13 @@ hr {
     text-align: right;
 }
 
-.navigation .link{
+.navigation .nav-brand-name .link {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: red;
+}
+
+.nav-pills .link{
     color: var(--color-color);
 }
 
@@ -130,10 +137,7 @@ hr {
     text-decoration: underline;
 }
 
-.nav-brand-name {
-    font-weight: bold;
-    font-size: x-large;
-}
+
 
 /* image */
 
@@ -268,7 +272,7 @@ hr {
 /* ------------------Tabs---between 427px and 1023px------------- */
 
 
-@media (min-width:427px) and (max-width:1023px){
+@media (min-width:427px) and (max-width:710px){
 
     .nav-brand-name .link {
         text-decoration: none;
@@ -282,6 +286,65 @@ hr {
         transition: 0.2s ease-in;
         cursor: pointer;
      }
+
+     /* section */
+
+     .section {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+
+    .section h1{
+        font-size: 1.2rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+
+    .section h2{
+        font-size: 1.6rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .section p{
+        font-size: 0.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .tech-stack img{
+        width: 1.4rem;
+        padding: 0 0.5rem;
+       transition: 0.2s ease-out;
+    }
+
+    .section .container{
+        padding: 0 0.5rem;
+    }
+
+    /* project page */
+
+    .project-section h1{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .project-section small{
+        font-size: 0.6rem;
+    }
+
+    .project-section p{
+        font-size: 0.7rem;
+        padding: 0;
+    }
+
+
+    .project-section .link-primary{
+        font-size: 0.7rem;
+    }
+
+    .project-section .link-secondary{
+        font-size: 0.6rem;
+    }
 }
 
 /* ------------------Larger mobile-------426px and below------------- */
