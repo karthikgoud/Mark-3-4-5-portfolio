@@ -1,0 +1,165 @@
+/* ---------------Small mobile----------320px and below------------- */
+
+@media (max-width:321px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* navigation */
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding: 0.5rem 0;
+    }
+
+    .navigation .list-non-bullet{
+        width: 80%;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        margin: 0.4rem 0;
+    }
+
+    .list-non-bullet .link{
+        padding: 0.4rem;
+        font-size: 1rem;
+    }
+
+    .nav-brand-name{
+        display: inline-block;
+    }
+
+    .nav-brand-name .link {
+        text-decoration: none;
+        font-size: 1.6rem;
+        /* color: yellow; */
+    }
+
+    .link-active {
+        padding: 0.4rem 1rem;
+        background-color: rgba(41, 162, 255, 0.5);
+        border-radius: 0.4rem;
+        text-decoration: underline;
+    }
+
+    /* header */
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .hero-img {
+        max-width: 180px;
+        margin: auto;
+        display: block;
+    }
+
+    .hero .hero-heading {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 0 0.5rem;
+    }
+
+    .hero .title{
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    /* section */
+
+    .section {
+        padding: 1rem;
+    }
+
+    .section h1{
+        font-size: 1.2rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+
+    .section h2{
+        font-size: 1.2rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .section p{
+        font-size: 0.6rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .tech-stack img{
+        width: 1.2rem;
+        padding: 0 0.5rem;
+       transition: 0.2s ease-out;
+    }
+
+    .section .container{
+        padding: 0 0.5rem;
+    }
+
+    /* project page */
+
+    .project-section h1{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .project-section small{
+        font-size: 0.5rem;
+    }
+
+    .project-section p{
+        font-size: 0.5rem;
+        padding: 0;
+    }
+
+
+    .project-section .link-primary{
+        font-size: 0.6rem;
+    }
+
+    .project-section .link-secondary{
+        font-size: 0.6rem;
+    }
+
+    /* footer */
+
+    .footer{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        padding: 0.4rem 0; 
+    }
+
+    .footer-heading{
+        font-size: 0.6rem;
+        display: none;
+    }
+
+    .social-links{
+        width: 1.2rem;
+    }
+
+    .footer .list-non-bullet{
+        width: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        margin: 0.4rem 0;
+    }
+    
+   
+}
